@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1G-jWaskl_x_vj1LtNtp2VTVbWVKg65zx
 """
 
-!pip install gradio
 
 import os
 from langchain import PromptTemplate
@@ -23,11 +22,10 @@ from langchain.callbacks import get_openai_callback
 
 import gradio as gr
 
-from google.colab import drive
-drive.mount('/content/drive')
+
 
 OPENAI_API_KEY = "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"
-TEXT_VECTORSTORE_PATH = "/content/drive/MyDrive/AI_Professeur/élève_TEST/DEVOIR/Français/Devoir_1.pdf"
+TEXT_VECTORSTORE_PATH = "Devoir_1.pdf"
 CHARACTER_SPLITTER_CHUNK_SIZE = 75
 OPENAI_EMBEDDINGS_CHUNK_SIZE = 16
 
